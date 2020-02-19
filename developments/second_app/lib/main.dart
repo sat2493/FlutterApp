@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart'
+import 'package:flutter/material.dart';
 
 import './question.dart';
-import './answer.dart'
+import './answer.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,7 +19,7 @@ class _MyAppState extends State<MyApp> {
   var _questionIndex = 0;
 
   void _answerQuestion() {
-    setState({
+    setState(() {
       _questionIndex = _questionIndex + 1;
     });
     print(_questionIndex);
@@ -30,7 +30,7 @@ class _MyAppState extends State<MyApp> {
     var questions = [
       'What\'s your favorite color?',
       'What\'s your favorite animal?',
-    ]
+    ];
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: Text('My Second App'),),
